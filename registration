@@ -1,7 +1,4 @@
 <?php
-/* =========================
-   CONNEXION DATABASE (mysqli OOP)
-   ========================= */
 $con = new mysqli("localhost", "root",
 "", "student");
 
@@ -9,9 +6,7 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
 
-/* =========================
-   TRAITEMENT FORMULAIRE
-   ========================= */
+
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
